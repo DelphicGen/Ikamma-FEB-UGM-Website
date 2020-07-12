@@ -1,0 +1,281 @@
+@font-face {
+    font-family: Quentin;
+    src: url('../font/Quentin.otf');
+}
+
+@font-face {
+    font-family: GothamMedium;
+    src: url('../font/gotham_ssv/Gotham-Medium.otf');
+}
+
+@font-face {
+    font-family: GothamLight;
+    src: url('../font/gotham_ssv/Gotham-Light.otf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: GothamLight;
+}
+
+a{
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+.info ol, .info-2 ol{
+    list-style: none;
+    counter-reset: li;
+}
+
+.info li, .info-2 li{
+    counter-increment: li;
+    padding-bottom: 10px;
+}
+
+.info li::before, .info-2 li::before{
+    content: counter(li);
+    color: dodgerblue;
+    display: inline-block;
+    width: 1em;
+}
+
+/* BEREAU.HTML */
+
+/* Bereau-Page */
+#bureau-page{
+    background-image: url('../img/bureau-img/bg1.png');
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+}
+
+.navbar{
+    background-color: transparent !important;
+    position: relative;
+    z-index: 1;
+    padding-left: 20px;
+}
+
+.logo{
+    height: 30px;
+    width: 50px;
+}
+
+.form-inline{
+    background-color: rgba(240, 240, 240, .8);
+    border: none !important;
+    border-radius: 20px;
+    width: 50%;
+}
+
+.form-control{
+    background-color: transparent;
+    border: none !important;
+    width: 90% !important;
+}
+
+.form-control:focus{
+    border: none;
+    background-color: transparent;
+}
+
+.search-btn{
+    background-color: transparent;
+    border: none;
+}
+
+.search-icon{
+    color: #f6f6f6;
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+}
+
+.navbar-nav{
+    margin: auto 0 auto auto !important;
+}
+
+.dropdown-menu{
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-menu *{
+    color: #fff !important;
+    transition-duration: .5s;
+}
+
+.nav-item{
+    margin-right: 20px;
+}
+
+.nav-link{
+    color: #fff !important;
+    font-family: GothamMedium;
+}
+
+.navigation-bar{
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 991px) {
+    .form-inline{
+        border-radius: 20px;
+        width: 100%;
+    }
+}
+
+.bureau-header{
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+    width: 700px;
+}
+
+.bureau-list{
+    height: 500px;
+}
+
+.bureau-container{
+    padding-top: 500px;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+}
+
+.advance-container{
+    background-image: url('../img/bureau-img/bg2.png');
+    top: -400px;
+    padding-bottom: 180px;
+}
+
+.bureau-img, .info{
+    width: calc(100% / 2);
+}
+
+.info-2{
+    width: 70%;
+    position: relative;
+}
+
+.advance-img{
+    height: 200px;
+    width: 270px;
+}
+
+.info, .info-2{
+    padding-left: 40px;
+}
+
+.info h5{
+    font-family: GothamMedium;
+}
+
+.proker{
+    font-family: GothamMedium;
+    color: dodgerblue;
+}
+
+.marketing-container{
+    background-image: url('../img/bureau-img/bg3-2.png');
+    top: -800px;
+    padding-bottom: 300px;
+}
+
+.first{
+    opacity: 0;
+}
+
+.hr-container{
+    background-image: url('../img/bureau-img/bg4-2.png');
+    top: -1400px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .bureau-header{
+        height: 220px;
+        width: 500px;
+    }
+    .advance-container, .marketing-container, .hr-container{
+        flex-direction: column;
+    }
+    .advance-img{
+        height: 300px;
+        width: 370px;
+    }
+    .info{
+        margin-top: 40px;
+        width: 80%;
+    }
+    .info-2{
+        width: 80%;
+        top: -50px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #bureau-page{
+        background-size: contain;
+    }
+    .dropdown-menu *{
+        color: #000 !important;
+        transition-duration: .5s;
+    }
+    .nav-link{
+        color: #000 !important;
+        font-family: GothamMedium;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .bureau-header{
+        height: 180px;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .marketing-container, .hr-container{
+        padding-top: 350px;
+    }
+    .bureau-header{
+        height: 140px;
+        width: 320px;
+    }
+    .advance-img{
+        height: 200px;
+        width: 270px;
+    }
+    .info, .info-2{
+        padding-left: 20px;
+        font-size: 14px;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .bureau-header{
+        height: 120px;
+        width: 280px;
+    }
+    .advance-img{
+        height: 150px;
+        width: 200px;
+    }
+    .info, .info-2{
+        font-size: 12px;
+        width: 100%;
+    }
+}

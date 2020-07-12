@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/indexstyle2.css">
+
+    <title>IKAMMA FEB UGM</title>
+</head>
+
+<body>
+
+    <section id="landing-page">
+        <div class="filter">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><img class="logo" src="img/home-img/logo.png" alt="ikamma-logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="search-btn"><i class="fa fa-search search-icon" aria-hidden="true"></i></button>
+                    </form>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="profile nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Profile
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="about.html">About</a>
+                              <a class="dropdown-item" href="bureau.html">Bureau</a>
+                              <a class="dropdown-item" href="departments.html">Departments</a>
+                              <a class="dropdown-item" href="organization.html">Organization</a>
+                            </div>
+                          </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="local nav-link" href="#latest-news">News</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="local nav-link" href="#latest-contacts">Registration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="local nav-link" href="#latest-contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="landing-page-container">
+
+                <h1 class="landing-page-header">IKAMMA</h1>
+                <p>Ikatan Keluarga Mahasiswa Manajemen (IKAMMA) FEB UGM merupakan sebuah himpunan mahasiswa jurusan
+                    manajemen Fakultas Ekonomika dn Bisnis Universitas Gadjah Mada yang dibentuk pada tahun 1984. Hal
+                    tersebut berarti IKAMMA saat ini telah memasuki usianya yang ke 34 tahun. Selama eksistensinya,
+                    IKAMMA selalu melakukan inovasi dan melakukan pembenahan guna tercapainya tujuan IKAMMA secara lebih
+                    optimal.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="info">
+        <div class="info-container">
+            <div class="info-content profile">
+                <img src="img/home-img/profile-icon.png" alt="profile-icon">
+                <h5>Profile</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="info-content events">
+                <img src="img/home-img/events-icon.png" alt="events-icon">
+                <h5>Events</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="info-content news">
+                <img src="img/home-img/news-icon.png" alt="news-icon">
+                <h5>News</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="info-content registration">
+                <img class="registration-icon" src="img/home-img/registration.png" alt="registration-icon">
+                <h5>Registration</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="extra-info">
+        <div class="exposure">
+            <img class="exposure-text" src="img/home-img/exposure-text.png" alt="exposure-text">
+            <img class="exposure-icon" src="img/home-img/exposure-icon.png" alt="exposure-icon">
+        </div>
+        <div class="gmbcc">
+            <img class="gmbcc-icon" src="img/home-img/gmbcc-icon.png" alt="gmbcc-text">
+            <img class="gmbcc-text" src="img/home-img/gmbcc-text.png" alt="gmbcc-icon">
+        </div>
+        <div class="ideas">
+            <img class="ideas-text" src="img/home-img/ideas-text.png" alt="ideas-text">
+            <img class="ideas-icon" src="img/home-img/ideas-icon.png" alt="ideas-icon">
+        </div>
+    </section>
+
+    <section id="latest-news">
+        <h3 class="latest-news-header">Latest News</h3>
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+            <!--Controls-->
+            <div class="controls-top">
+                <a class="btn-floating" href="#multi-item-example" data-slide="prev"><img class="normal control"
+                        src="img/home-img/news-button.png" alt="prev"></a>
+                <a class="btn-floating" href="#multi-item-example" data-slide="next"><img class="control rotate"
+                        src="img/home-img/news-button.png" alt="next"></a>
+            </div>
+            <!--/.Controls-->
+
+            <!--Indicators-->
+            <!-- <ol class="carousel-indicators">
+          <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+          <li data-target="#multi-item-example" data-slide-to="1"></li>
+          <li data-target="#multi-item-example" data-slide-to="2"></li>
+        </ol> -->
+            <!--/.Indicators-->
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+
+                    <div class="news-container row">
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top"
+                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the
+                                        card's content.</p>
+                                    <a class="read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top"
+                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the
+                                        card's content.</p>
+                                    <a class="read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top"
+                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the
+                                        card's content.</p>
+                                    <a class="read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.First slide-->
+
+                <!--Second slide-->
+                <div class="news-container carousel-item">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top"
+                                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the
+                                        card's content.</p>
+                                    <a class="read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top"
+                                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the
+                                        card's content.</p>
+                                    <a class="read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top"
+                                    src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the
+                                        card's content.</p>
+                                    <a class="read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Second slide-->
+
+                <!--Third slide-->
+                <div class="news-container carousel-item">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top"
+                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the
+                                        card's content.</p>
+                                    <a class="read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top"
+                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the
+                                        card's content.</p>
+                                    <a class="read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 clearfix d-none d-md-block">
+                            <div class="card mb-2">
+                                <img class="card-img-top"
+                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the
+                                        card's content.</p>
+                                    <a class="read-more-btn">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Third slide-->
+
+            </div>
+            <!--/.Slides-->
+
+        </div>
+        <!--/.Carousel Wrapper-->
+    </section>
+
+    <footer id="latest-contacts">
+        <div class="contact-info">
+            <div class="calendar">
+                <img class="calendar-img" src="img/home-img/logoikamma.png" alt="calender-img">
+            </div>
+            <div class="contact-us">
+                <h3>Contact us</h3>
+                <h6><img class="icon-mail" src="img/home-img/contact-mail.png" alt="mail-icon"> ikamma.feb@ugm.ac.id</h6>
+                <h6><img class="icon" src="img/home-img/contact-line.png" alt="line-icon"> @maf7665w</h6>
+                <h6><img class="icon" src="img/home-img/contact-instagram.png" alt="instagram-icon"> ikammafebugm</h6> 
+            </div>
+        </div>
+        <!-- <img class="circ circ-1" src="img/home-img/buletan.png" alt="bubble">
+        <img class="circ circ-2" src="img/home-img/buletan.png" alt="bubble"> -->
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
